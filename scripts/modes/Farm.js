@@ -1,6 +1,7 @@
 class Farm
 {
     constructor() {
+        this.shortName = "farm"
         this.name = "Los animales de la granja"
         this.description = "El juego consiste en relacionar los animales con su onomatopeya"
         this.arrMision = [
@@ -20,6 +21,9 @@ class Farm
         this.level++
     }
 
+    getShortName() {
+        return this.shortName
+    }
     getName() {
         return this.name
     }

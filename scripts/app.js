@@ -1,3 +1,8 @@
+if (!localStorage.getItem("gameInit")) {
+    localStorage.clear()
+    location.href = window.location.origin
+}
+
 // PRESETS
 const PLAYER_NAME = localStorage.getItem("playerName")
 const PLAYER_AGE = localStorage.getItem("playerAge")
@@ -19,5 +24,6 @@ let game = new Game(player,mode)
 // EVENTS
 document.querySelector("#next").addEventListener("click",() => { game.next() })
 document.querySelector("#reset").addEventListener("click",() => { game.reset() })
+document.querySelector("#exit").addEventListener("click", () => { game.end() })
 
 // GAME
