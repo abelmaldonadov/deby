@@ -1,32 +1,4 @@
-body,html{
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-position: center;
-}
-#app{
-    width: 100%;
-    height: 100%;
-}
-.control{
-    width: 100%;
-    height: 10%;
-    display: flex;
-    
-}
-.control .enun{
-    width: 80%;
-    height: 100%;
-    background: skyblue;
-}
-.control .btn-group{
-    width: 20%;
-    height: 100%;
-    background: lemonchiffon;
-}
-.monitor{
-    width: 100%;
-    height: 90%;
+.blur{
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
 }

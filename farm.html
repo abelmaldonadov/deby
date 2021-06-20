@@ -6,31 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deby - Farm</title>
 
-    <!-- MANDARINA -->
-
-
+    <!-- MANDARINA STYLES -->
+    <link rel='stylesheet' href="styles/mandarina.ini.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/mandarinacss/mandarina@master/mandarina.min.css'>
+    
     <!-- STYLES -->
-    <link rel="stylesheet" href="styles/general.css">
+    <link rel='stylesheet' href='styles/general.css'>
 </head>
 <body>
-    <div id="app">
-        <div class="control">
-            <div class="enun"></div>
-            <div class="btn-group">
-                <button id="next">Siguiente</button>
-                <button id="reset">Reiniciar</button>
-                <button id="exit">Salir</button>
+    <div id="app" class="mx-2">
+        <div class="row">
+            <div class="col">
+                <div class="panel control light p-2">
+                    <div class="enun">
+                        <!-- RENDER -->
+                    </div>
+                    <div class="flex-right botones">
+                        <button id="reset" class="btn l-green mr-1">Reiniciar</button>
+                        <button id="exit" class="btn l-red">Salir</button>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="monitor">
+        <div class="row mission">
             <!-- RENDER -->
         </div>
+        <div class="row monitor">
+            <!-- RENDER -->
+        </div>
+        
     </div>
 
-    <!-- MANDARINA -->
-
+    <!-- MANDARINA SCRIPTS -->
+    <script src='https://cdn.jsdelivr.net/gh/mandarinacss/mandarina@master/mandarina.min.js'></script>
 
     <!-- SCRIPT -->
+    <script src="scripts/Msg.js"></script>
+    <script src="scripts/Informe.js"></script>
     <script src="scripts/Player.js"></script>
     <script src="scripts/modes/Farm.js"></script>
     <script src="scripts/modes/Park.js"></script>

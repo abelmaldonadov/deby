@@ -6,25 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deby</title>
 
-    <!-- MANDARINA -->
-
+    <!-- MANDARINA CSS STYLES -->
+    <link rel='stylesheet' href="styles/mandarina.ini.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/mandarinacss/mandarina@master/mandarina.min.css'>
 
     <!-- STYLES -->
 
 </head>
 <body>
-    <div id="app">
-        <form id="data">
-            <input name="name" type="text" placeholder="Ingrese su nombre..." required maxlength="20">
-            <input name="age" type="number" placeholder="Ingrese su edad..." required min="1">
-            <label for="farm">La granja</label>
-            <input name="mode" type="radio" id="farm" value="farm" checked>
-            <button>Comenzar</button>
-        </form>
-    </div>
+    <main id="app" class="container mt-9">
+        
+        <div class="row flex-center">
+            <div class="col-6">
+                <form class="form" id="data">
+                    <div class="mb-2">
+                        <h1>Deby</h1>
+                        <p class="ml-1 text-gray">- Prototipo V0.2</p>
+                    </div>
+                    <input name="name" type="text" placeholder="Ingrese el nombre del paciente..." required maxlength="20">
+                    <input name="age" type="number" placeholder="Ingrese la edad del paciente..." required min="1">
 
-    <!-- MANDARINA -->
+                    <!-- Modos -->
+                    <input name="mode" type="radio" id="farm" value="farm" checked>
+                    <label for="farm" class="radio">La granja</label>
 
+                    <input name="mode" type="radio" id="park" value="park" disabled>
+                    <label for="park" class="radio">El parque (En desarrollo)</label>
+
+                    <input name="mode" type="radio" id="prendas" value="prendas" disabled>
+                    <label for="prendas" class="radio">Prendas de vestir (En desarrollo)</label>
+
+                    <input name="mode" type="radio" id="transporte" value="transporte" disabled>
+                    <label for="transporte" class="radio">Transporte (En desarrollo)</label>
+                    
+                    <div class="mt-2 center">
+                        <button class="btn btn-block l-notify" type="submit">Comenzar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- MANDARINA SCRIPTS -->
+    <script src='https://cdn.jsdelivr.net/gh/mandarinacss/mandarina@master/mandarina.min.js'></script>
 
     <!-- SCRIPT -->
     <script src="scripts/data.js"></script>

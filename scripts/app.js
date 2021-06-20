@@ -19,10 +19,13 @@ switch (GAME_MODE) {
         console.error("No se estableció el modo de juego")
         break;
 }
-let game = new Game(player,mode)
+let info = new Informe(
+    "Informe_"+new Date().getFullYear()+"-"+(new Date().getMonth()+1)+"-"+new Date().getDate()+"_"+PLAYER_NAME+"_"+PLAYER_AGE+"_"+GAME_MODE,
+    mode.getNumLevels()
+)
+let game = new Game(player,mode, info)
 
 // EVENTS
-document.querySelector("#next").addEventListener("click",() => { game.next() })
 document.querySelector("#reset").addEventListener("click",() => { game.reset() })
 document.querySelector("#exit").addEventListener("click", () => { game.end() })
 
